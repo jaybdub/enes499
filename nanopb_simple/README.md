@@ -12,28 +12,27 @@ Here I assume you have Python2.7.X installed, if not download it [here]().
 Download [protobuf-2.5.0.tar.gz](https://code.google.com/p/protobuf/downloads/list)
 
 Extract the compressed file to a location of your choice (I chose /home/john/ A.K.A. ~/).  After extraction, in the terminal, change directories into ~/protobuf-2.5.0, configure, compile, and install.
-	```
+
     cd ~/protobuf-2.5.0/
-	./configure
-	make
-	make check
-	sudo make install
-	cd python
-	python ./setup.py build
-	sudo python ./setup.py install
-	```
+    ./configure
+    make
+    make check
+    sudo make install
+    cd python
+    python ./setup.py build
+    sudo python ./setup.py install
+
 Okay, there you have it, protocol buffers have been installed.  To verify this type 
 
-   protoc --version
+    protoc --version
 
 If it responds with a message other than
-	```
-   libprotoc 2.5.0
-	```
+	
+    libprotoc 2.5.0
+	
 then try typing the following command
-	```
-	sudo ldconfig
-	```
+    
+    sudo ldconfig
 
 ###Install nanopb
 
@@ -43,10 +42,8 @@ So basically, it's a version of Google's Protocol Buffers that you can use on yo
 
 Assuming you have git installed type the following to download and compile nanopb.
 
-    ```
-	cd
-	git clone https://code.google.com/p/nanopb
-	cd ~/nanopb/generator/proto
-	make
-	```
+    cd
+    git clone https://code.google.com/p/nanopb
+    cd ~/nanopb/generator/proto
+    make
 
